@@ -105,6 +105,10 @@ html {
   flex-direction: column;
 }
 
+.nav-icons:first-child {
+  background-color: var(--color-yellow);
+}
+
 .nav-icons {
   color: var(--color-black);
   width: 2.5rem;
@@ -173,7 +177,8 @@ html {
 }
 
 .column4 {
-  background-color: green;
+  background-color: var(--white);
+  box-shadow: 0.8rem 0 2rem 1.2rem rgba(153, 153, 153, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
