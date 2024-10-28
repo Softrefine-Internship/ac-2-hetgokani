@@ -1,0 +1,62 @@
+.title {
+  font-family: "Outfit", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0 0;
+  padding: 0 2rem;
+  &-des {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 0 0.7rem 2rem;
+  }
+}
+.titleclass {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+}
+
+.dropdown-container {
+  width: 100%;
+}
+
+.dropdown-title {
+  padding: 0.5rem 0;
+  margin: 0 0 0 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.dropdown-items {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  transition: transform 0.2s;
+}
+.dropdown-items li {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.dropdown-items li:last-child {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  transition: transform 0.2s;
+  font-size: 2rem;
+}

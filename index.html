@@ -3,10 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Het Test 4</title>
+    <title>Het Test 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <h1 class="h">hi</h1>
+    <section class="grid-container">
+      <main class="column1">
+        <div class="flex-1">
+          <main class="logosec">
+            <img src="images/logo (2).png" alt="logo" class="logo" />
+          </main>
+          <main class="icons">
+            <ion-icon class="nav-icons" name="home-outline"></ion-icon>
+            <ion-icon class="nav-icons" name="people-outline"></ion-icon>
+            <ion-icon class="nav-icons" name="calendar-outline"></ion-icon>
+            <ion-icon class="nav-icons" name="checkbox-outline"></ion-icon>
+            <ion-icon class="nav-icons" name="time-outline"></ion-icon>
+            <ion-icon class="nav-icons" name="chatbubble-outline"></ion-icon>
+          </main>
+          <main class="questionmark">
+            <ion-icon class="question-icons" name="help-circle"></ion-icon>
+          </main>
+        </div>
+      </main>
+      <main class="column2">
+        <div class="titleclass">
+          <h1 class="title">Ziferblat</h1>
+          <h1 class="title-des">Teamwork & time management</h1>
+        </div>
+        <section class="col2">
+          <div class="dropdown-container">
+            <div
+              class="dropdown-title"
+              onclick="toggleDropdown('title-1', this)"
+            >
+              Team
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-items" id="title-1">
+              <li>Developer</li>
+              <li>Designer</li>
+              <li>Add new team</li>
+            </ul>
+
+            <div
+              class="dropdown-title"
+              onclick="toggleDropdown('title-2', this)"
+            >
+              Projects
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-items" id="title-2">
+              <li>All projects (4)</li>
+              <li>Design system</li>
+              <li>User Flow</li>
+              <li>UX research</li>
+              <li>Add new project</li>
+            </ul>
+
+            <div
+              class="dropdown-title"
+              onclick="toggleDropdown('title-3', this)"
+            >
+              Tasks
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-items" id="title-3">
+              <li>All task (3)</li>
+              <li>New (1)</li>
+              <li>In progress (1)</li>
+              <li>Done (1)</li>
+              <li>Add new task</li>
+            </ul>
+          </div>
+          <div class="dropdown-title" onclick="toggleDropdown('title-4', this)">
+            Reminders
+            <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <ul class="dropdown-items" id="title-4">
+            <li>Meeting (2)</li>
+
+            <li>Add new reminder</li>
+          </ul>
+
+          <div class="dropdown-title" onclick="toggleDropdown('title-5', this)">
+            Messenger
+            <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <ul class="dropdown-items" id="title-5">
+            <li>David</li>
+            <li>Alex</li>
+            <li>Add new messenger</li>
+          </ul>
+        </section>
+      </main>
+      <main class="column3">fg</main>
+      <main class="column4">fg</main>
+    </section>
+    <script>
+      function toggleDropdown(titleId, titleElement) {
+        const dropdown = document.getElementById(titleId);
+        const icon = titleElement.querySelector(".icon");
+
+        if (dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+          icon.setAttribute("name", "chevron-forward-outline");
+        } else {
+          dropdown.style.display = "block";
+          icon.setAttribute("name", "chevron-down-outline");
+        }
+      }
+    </script>
   </body>
 </html>

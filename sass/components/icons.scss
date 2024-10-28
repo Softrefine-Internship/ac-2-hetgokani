@@ -1,0 +1,46 @@
+.logo {
+  width: 100%;
+  height: 6rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+}
+.logosec {
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-icons {
+  color: var(--color-black);
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 1.5rem 0;
+  width: 100%;
+  transition: all 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+
+    background-color: var(--color-yellow);
+  }
+}
+.question-icons {
+  color: var(--color-black);
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0 1rem 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.questionmark {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -5,8 +5,175 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Outfit", serif;
   font-size: 62.5%;
+}
+
+:root {
+  --color-white: #f2ece2;
+  --color-orange: #f0894d;
+  --color-pink: #fcbea4;
+  --color-yellow: #eee7dc;
+  --color-black: #111111;
+  --color-gray: #9d9d9d;
+  --white: white;
+  --color-yellow2: #fce6bd;
+}
+
+.title {
+  font-family: "Outfit", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0 0;
+  padding: 0 2rem;
+}
+.title-des {
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0 0 0.7rem 2rem;
+}
+
+.titleclass {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+}
+
+.dropdown-container {
+  width: 100%;
+}
+
+.dropdown-title {
+  padding: 0.5rem 0;
+  margin: 0 0 0 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.dropdown-items {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  transition: transform 0.2s;
+}
+
+.dropdown-items li {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.dropdown-items li:hover {
+  cursor: pointer;
+}
+
+.dropdown-items li:last-child {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.dropdown-items li:last-child:hover {
+  cursor: pointer;
+}
+
+.icon {
+  transition: transform 0.2s;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 100%;
+  height: 6rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+}
+
+.logosec {
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-icons {
+  color: var(--color-black);
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 1.5rem 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.nav-icons:hover {
+  cursor: pointer;
+  background-color: var(--color-yellow);
+}
+
+.question-icons {
+  color: var(--color-black);
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0 1rem 0;
+}
+.question-icons:hover {
+  cursor: pointer;
+}
+
+.questionmark {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.col2 {
+  width: 100%;
+  padding: 3rem 2rem 2rem 2rem;
+  height: 100%;
+  height: calc(100vh - 7rem);
+  font-size: 5rem;
+  overflow-y: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 6% 18% 46% 30%;
+  height: 100vh;
+}
+
+.column1 {
+  background-color: var(--white);
+  width: 100%;
+}
+
+.column2 {
+  background-color: var(--color-yellow);
+}
+
+.column3 {
+  background-color: var(--white);
+}
+
+.column4 {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

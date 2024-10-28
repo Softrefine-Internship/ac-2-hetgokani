@@ -1,1 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 6% 18% 46% 30%;
+  height: 100vh;
+}
 
+.column1 {
+  background-color: var(--white);
+  width: 100%;
+}
+.column2 {
+  background-color: var(--color-yellow);
+}
+.column3 {
+  background-color: var(--white);
+}
+.column4 {
+  background-color: green;
+}
