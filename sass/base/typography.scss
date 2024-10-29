@@ -120,3 +120,37 @@
     }
   }
 }
+.reminder {
+  font-size: 2rem;
+  font-family: "Outfit", serif;
+  margin: 2.8rem 0 0 0;
+  &-div {
+    margin: 2rem 0 4rem 0;
+    border: 1px solid #6d6a6a6e;
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    &--title {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #363636;
+    }
+    &--des {
+      font-size: 1.8rem;
+    }
+  }
+}
+.reminderbutton {
+  padding: 1rem 1.5rem;
+  color: black;
+  border: 2px dashed var(--color-orange);
+  background-color: white;
+  border-radius: 2rem;
+  flex-shrink: 0;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-orange);
+    background-color: var(--color-orange);
+    color: white;
+    box-shadow: 0 0 5px #f0894d, 0 0 10px #f0894d;
+  }
+}

@@ -149,6 +149,42 @@ html {
   cursor: pointer;
 }
 
+.reminder {
+  font-size: 2rem;
+  font-family: "Outfit", serif;
+  margin: 2.8rem 0 0 0;
+}
+.reminder-div {
+  margin: 2rem 0 4rem 0;
+  border: 1px solid rgba(109, 106, 106, 0.431372549);
+  border-radius: 2rem;
+  padding: 2rem 2.5rem;
+}
+.reminder-div--title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #363636;
+}
+.reminder-div--des {
+  font-size: 1.8rem;
+}
+
+.reminderbutton {
+  padding: 1rem 1.5rem;
+  color: black;
+  border: 2px dashed var(--color-orange);
+  background-color: white;
+  border-radius: 2rem;
+  flex-shrink: 0;
+}
+.reminderbutton:hover {
+  cursor: pointer;
+  border: 2px solid var(--color-orange);
+  background-color: var(--color-orange);
+  color: white;
+  box-shadow: 0 0 5px #f0894d, 0 0 10px #f0894d;
+}
+
 .logo {
   width: 100%;
   height: 6rem;
@@ -204,33 +240,49 @@ html {
 
 .card1 {
   background-color: var(--color-pink);
-  height: 20rem;
+  border-radius: 2.5rem;
+}
+.card1:hover {
+  box-shadow: 0 0 5px #fcbea4, 0 0 10px #fcbea4;
+  cursor: pointer;
 }
 
 .card2 {
   background-color: var(--color-yellow2);
-  height: 20rem;
+  border-radius: 2.5rem;
+}
+.card2:hover {
+  box-shadow: 0 0 5px #fce6bd, 0 0 10px #fce6bd;
+  cursor: pointer;
 }
 
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2.5rem;
+  gap: 2.2rem;
+  margin: 1.2rem 0 0 0;
 }
 
-.textthree {
+.textthree,
+.texttwo {
   background-color: black;
   color: white;
-  padding: 1.6rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  padding: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border: 2px solid var(--color-pink);
   z-index: 3;
+}
+
+.texttwo {
+  border: 2px solid black;
+  background-color: var(--color-yellow2);
+  color: black;
 }
 
 .img-dotflex {
@@ -240,8 +292,8 @@ html {
 }
 
 .img-user {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
   border-radius: 50%;
   margin: 0 0 0 -1.5rem;
   border: 2px solid var(--color-pink);
@@ -258,7 +310,68 @@ html {
 }
 
 .centercard {
-  padding: 2rem;
+  padding: 3rem 2rem;
+}
+
+.dotflex {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-direction: column;
+}
+.dotflex:hover {
+  cursor: pointer;
+}
+
+.dot1,
+.dot2 {
+  background-color: black;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Outfit", serif;
+  margin-top: 4rem;
+}
+.card-title-des {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1.6rem 0 0 0;
+}
+.card-title-progress {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 13rem 0 0 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.7rem;
+  margin: 1rem 0 0 0;
+  background-color: rgba(77, 78, 74, 0.281);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.progress-area {
+  height: 100%;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.cardimg {
+  border: 2px solid var(--color-yellow2);
+}
+
+.flexendclass {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .flex-1 {
@@ -281,6 +394,41 @@ html {
 
 .col-center {
   padding: 1rem 2rem;
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 0.2rem);
+  overflow-y: auto;
+}
+
+.reminderflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.orangedotsflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.orangedotsflex:hover {
+  cursor: pointer;
+}
+
+.orangedot {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  margin-top: 1.5rem;
+}
+
+.light {
+  background-color: rgba(250, 216, 197, 0.8431372549);
 }
 
 .grid-container {
