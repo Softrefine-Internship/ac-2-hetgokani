@@ -1,0 +1,51 @@
+.card1 {
+  background-color: var(--color-pink);
+  height: 20rem;
+}
+.card2 {
+  background-color: var(--color-yellow2);
+  height: 20rem;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
+.textthree {
+  background-color: black;
+  color: white;
+  padding: 1.8rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 2px solid var(--color-pink);
+  z-index: 3;
+}
+.img-dotflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-user {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0 0 0 -1.7rem;
+  border: 2px solid var(--color-pink);
+  z-index: 2;
+}
+.img-user:last-child {
+  z-index: 1;
+}
+.imgflex {
+  display: flex;
+  align-items: center;
+}
+.centercard {
+  padding: 2rem;
+}

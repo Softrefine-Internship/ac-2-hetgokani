@@ -86,6 +86,69 @@ html {
   font-size: 2rem;
 }
 
+.col3-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Outfit", serif;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 0.6rem 0.6rem;
+  border: 1px solid #cccccc;
+  border-radius: 3rem;
+  margin: 1.2rem 0 0 0;
+}
+
+.search-container button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 0.5rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input[type=search] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  font-size: 1.7rem;
+}
+
+.search-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #ccc;
+}
+
+.projectname {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.5rem 0 0 0;
+}
+.projectname-title {
+  font-size: 2.1rem;
+  font-family: "Outfit", serif;
+}
+.projectname-open {
+  font-size: 1.5rem;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--color-orange);
+}
+.projectname-open:hover {
+  cursor: pointer;
+}
+
 .logo {
   width: 100%;
   height: 6rem;
@@ -139,6 +202,65 @@ html {
   flex-direction: column;
 }
 
+.card1 {
+  background-color: var(--color-pink);
+  height: 20rem;
+}
+
+.card2 {
+  background-color: var(--color-yellow2);
+  height: 20rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
+.textthree {
+  background-color: black;
+  color: white;
+  padding: 1.8rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 2px solid var(--color-pink);
+  z-index: 3;
+}
+
+.img-dotflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-user {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0 0 0 -1.7rem;
+  border: 2px solid var(--color-pink);
+  z-index: 2;
+}
+
+.img-user:last-child {
+  z-index: 1;
+}
+
+.imgflex {
+  display: flex;
+  align-items: center;
+}
+
+.centercard {
+  padding: 2rem;
+}
+
 .flex-1 {
   width: 100%;
   display: flex;
@@ -155,6 +277,10 @@ html {
   height: calc(100vh - 7rem);
   font-size: 5rem;
   overflow-y: auto;
+}
+
+.col-center {
+  padding: 1rem 2rem;
 }
 
 .grid-container {
