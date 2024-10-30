@@ -30,11 +30,29 @@ html {
 .title-des {
   font-weight: 400;
   font-size: 1.2rem;
-  padding: 0 0 0.7rem 2rem;
+  padding: 0 0 0 2rem;
 }
 
 .titleclass {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+  padding-bottom: 0.7rem;
+}
+
+.webtitle {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+  padding: 0.95rem 2rem;
+}
+.webtitle__one {
+  font-size: 2.8rem;
+  font-family: "Outfit", serif;
+}
+.webtitle__des {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Outfit", serif;
 }
 
 .dropdown-container {
@@ -99,7 +117,7 @@ html {
   width: 100%;
   max-width: 100%;
   margin: auto;
-  padding: 0.6rem 0.6rem;
+  padding: 0.2rem 0.6rem;
   border: 1px solid #cccccc;
   border-radius: 3rem;
   margin: 1.2rem 0 0 0;
@@ -170,7 +188,7 @@ html {
 }
 
 .reminderbutton {
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.7rem;
   color: black;
   border: 2px dashed var(--color-orange);
   background-color: white;
@@ -183,6 +201,159 @@ html {
   background-color: var(--color-orange);
   color: white;
   box-shadow: 0 0 5px #f0894d, 0 0 10px #f0894d;
+}
+
+.addbutton {
+  padding: 1rem 1.7rem;
+  color: white;
+  border: 2px dashed var(--color-orange);
+  background-color: var(--color-orange);
+  border-radius: 2.2rem;
+  flex-shrink: 0;
+}
+.addbutton:hover {
+  cursor: pointer;
+  border: 2px solid var(--color-orange);
+  background-color: var(--color-orange);
+  color: white;
+  box-shadow: 0 0 5px #f0894d, 0 0 10px #f0894d;
+}
+
+.header__loginarea--bellicon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+}
+.header__loginarea--bellicon:hover {
+  transform: rotate(-15deg);
+  cursor: pointer;
+}
+.header__loginarea__bellsection {
+  position: relative;
+}
+.header__loginarea--notificationdot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--color-orange);
+  position: absolute;
+  top: 26%;
+  left: 54%;
+  border-radius: 50%;
+}
+
+.loginimg {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 1.5rem;
+}
+.loginimg:hover {
+  cursor: pointer;
+}
+
+.user {
+  font-size: 1.1rem;
+  color: #ccc;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+}
+.user-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -0.3rem;
+}
+
+.arrowicon-down {
+  color: var(--color-orange);
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 0.1rem;
+}
+
+.arrowicon {
+  background-color: rgba(204, 204, 204, 0.2117647059);
+  border: 1px solid var(--color-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1.4rem;
+}
+.arrowicon:hover {
+  cursor: pointer;
+}
+
+.username {
+  margin: 0 0 0 0.8rem;
+}
+
+.teamtitle {
+  font-size: 2rem;
+  margin: 5rem 0 0 0;
+}
+
+.teamimg {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+}
+.teamimg:hover {
+  cursor: pointer;
+}
+
+.plusicon {
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--color-orange);
+  padding: 0.3rem;
+}
+
+.plus {
+  background-color: rgba(204, 204, 204, 0.2196078431);
+  border-radius: 50%;
+  border: 2px dashed var(--color-orange);
+  display: flex;
+  align-items: center;
+}
+.plus:hover {
+  cursor: pointer;
+}
+
+.projectbox {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2.3rem 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+  border-radius: 1.7rem;
+}
+.projectbox-title {
+  font-size: 1.2rem;
+  color: #666666;
+  font-weight: 400;
+}
+.projectbox-des {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.marginset {
+  margin: 4rem 0 0 0;
+}
+
+.dailytitle {
+  font-size: 2rem;
+}
+
+.editoption {
+  font-size: 1.4rem;
+  color: var(--color-orange);
+  font-weight: 400;
+  padding: 0 2.2rem 0 0;
+}
+.editoption:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -335,7 +506,7 @@ html {
   font-size: 2rem;
   font-weight: 600;
   font-family: "Outfit", serif;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .card-title-des {
   font-size: 1.2rem;
@@ -345,7 +516,7 @@ html {
 .card-title-progress {
   font-size: 1.2rem;
   font-weight: 400;
-  margin: 13rem 0 0 0;
+  margin: 10rem 0 0 0;
 }
 
 .progress-bar {
@@ -372,6 +543,115 @@ html {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+.daily-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 1.5rem;
+  margin: 1.2rem 0 0 0;
+}
+
+.dailycard1 {
+  background-color: rgba(236, 218, 191, 0.631372549);
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dailycard1:hover {
+  cursor: pointer;
+}
+
+.dailycard2 {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dailycard2:hover {
+  cursor: pointer;
+}
+
+.dailycardcenter {
+  padding: 1rem 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addnewtext {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.addnewplus {
+  align-self: flex-end;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.addnewcenter {
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.dailycard-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0 0.4rem;
+}
+
+.reddot {
+  background-color: var(--color-orange);
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+}
+
+.box {
+  border: 1.5px solid var(--color-orange);
+  height: 1.1rem;
+  width: 1.1rem;
+  background-color: white;
+  border-radius: 25%;
+  margin: 0 0 0 0.7rem;
+}
+
+.dailycardtext {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 0 3rem 0;
+}
+
+.cyandot {
+  background-color: aqua;
+}
+
+.whitedot {
+  background-color: white;
+}
+
+.orangebg {
+  background-color: var(--color-orange);
+}
+
+.white {
+  color: white;
+}
+
+.boxicon {
+  height: 1rem;
+  width: 1rem;
+  color: white;
+}
+
+.blackbg {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.utilitymarginbottom {
+  margin-bottom: 4rem;
 }
 
 .flex-1 {
@@ -415,8 +695,15 @@ html {
   width: 100%;
   margin: 0 auto;
 }
-.orangedotsflex:hover {
-  cursor: pointer;
+
+.orangedotsflex1 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
 }
 
 .orangedot {
@@ -426,9 +713,56 @@ html {
   background-color: var(--color-orange);
   margin-top: 1.5rem;
 }
+.orangedot:hover {
+  cursor: pointer;
+}
 
 .light {
   background-color: rgba(250, 216, 197, 0.8431372549);
+}
+
+.userloginflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.userloginflex2 {
+  display: flex;
+  align-items: center;
+}
+
+.teamuserflex {
+  display: flex;
+  align-items: center;
+  margin: 1.3rem 0 0 0;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+.dailytaskflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+}
+
+.addnew-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topflex {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.removespace {
+  justify-content: flex-start;
 }
 
 .grid-container {

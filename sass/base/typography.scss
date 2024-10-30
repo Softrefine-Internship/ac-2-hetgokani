@@ -7,13 +7,29 @@
   &-des {
     font-weight: 400;
     font-size: 1.2rem;
-    padding: 0 0 0.7rem 2rem;
+    padding: 0 0 0 2rem;
   }
 }
 .titleclass {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+  padding-bottom: 0.7rem;
 }
-
+.webtitle {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+  padding: 0.95rem 2rem;
+  &__one {
+    font-size: 2.8rem;
+    font-family: "Outfit", serif;
+  }
+  &__des {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Outfit", serif;
+  }
+}
 .dropdown-container {
   width: 100%;
 }
@@ -72,7 +88,7 @@
   width: 100%;
   max-width: 100%;
   margin: auto;
-  padding: 0.6rem 0.6rem;
+  padding: 0.2rem 0.6rem;
   border: 1px solid #cccccc;
   border-radius: 3rem;
   margin: 1.2rem 0 0 0;
@@ -140,7 +156,7 @@
   }
 }
 .reminderbutton {
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.7rem;
   color: black;
   border: 2px dashed var(--color-orange);
   background-color: white;
@@ -152,5 +168,146 @@
     background-color: var(--color-orange);
     color: white;
     box-shadow: 0 0 5px #f0894d, 0 0 10px #f0894d;
+  }
+}
+.addbutton {
+  padding: 1rem 1.7rem;
+  color: white;
+
+  border: 2px dashed var(--color-orange);
+  background-color: var(--color-orange);
+  border-radius: 2.2rem;
+  flex-shrink: 0;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-orange);
+    background-color: var(--color-orange);
+    color: white;
+    box-shadow: 0 0 5px #f0894d, 0 0 10px #f0894d;
+  }
+}
+.header__loginarea {
+  &--bellicon {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.7rem;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: rotate(-15deg);
+      cursor: pointer;
+    }
+  }
+  &__bellsection {
+    position: relative;
+  }
+  &--notificationdot {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--color-orange);
+    position: absolute;
+    top: 26%;
+    left: 54%;
+    border-radius: 50%;
+  }
+}
+.loginimg {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 1.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.user {
+  font-size: 1.1rem;
+  color: #ccc;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  &-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -0.3rem;
+  }
+}
+.arrowicon-down {
+  color: var(--color-orange);
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 0.1rem;
+}
+.arrowicon {
+  background-color: #cccccc36;
+  border: 1px solid var(--color-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1.4rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.username {
+  margin: 0 0 0 0.8rem;
+}
+.teamtitle {
+  font-size: 2rem;
+  margin: 5rem 0 0 0;
+}
+.teamimg {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.plusicon {
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--color-orange);
+  padding: 0.3rem;
+}
+.plus {
+  background-color: #cccccc38;
+  border-radius: 50%;
+  border: 2px dashed var(--color-orange);
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.projectbox {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2.3rem 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+  border-radius: 1.7rem;
+  &-title {
+    font-size: 1.2rem;
+    color: #666666;
+    font-weight: 400;
+  }
+  &-des {
+    font-size: 1.8rem;
+    color: black;
+  }
+}
+.marginset {
+  margin: 4rem 0 0 0;
+}
+.dailytitle {
+  font-size: 2rem;
+}
+.editoption {
+  font-size: 1.4rem;
+  color: var(--color-orange);
+  font-weight: 400;
+  padding: 0 2.2rem 0 0;
+  &:hover {
+    cursor: pointer;
   }
 }

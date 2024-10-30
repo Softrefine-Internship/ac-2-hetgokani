@@ -36,9 +36,16 @@
   gap: 0.7rem;
   width: 100%;
   margin: 0 auto;
-  &:hover {
-    cursor: pointer;
-  }
+}
+.orangedotsflex1 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
 }
 .orangedot {
   height: 0.7rem;
@@ -46,7 +53,49 @@
   border-radius: 50%;
   background-color: var(--color-orange);
   margin-top: 1.5rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .light {
   background-color: #fad8c5d7;
+}
+.userloginflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.userloginflex2 {
+  display: flex;
+  align-items: center;
+}
+.teamuserflex {
+  display: flex;
+  align-items: center;
+  margin: 1.3rem 0 0 0;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+.dailytaskflex {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+}
+.addnew-flex {
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: column;
+  height: 100%;
+}
+.topflex {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.removespace {
+  justify-content: flex-start;
 }
