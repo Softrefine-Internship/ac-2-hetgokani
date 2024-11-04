@@ -7,6 +7,60 @@
 html {
   font-family: "Outfit", serif;
   font-size: 62.5%;
+  @media (min-width: 1800px) and (max-width: 2700px) {
+    font-size: 100%;
+  }
+  @media (min-width: 1700px) and (max-width: 1930px) {
+    font-size: 90%;
+  }
+  @media (min-width: 1450px) and (max-width: 1700px) {
+    font-size: 80%;
+  }
+  @media (min-width: 1471px) and (max-width: 1550px) {
+    font-size: 75%;
+  }
+  @media (min-width: 1350px) and (max-width: 1470px) {
+    font-size: 70%;
+  }
+  @media (min-width: 2400px) and (max-width: 2700px) {
+    .teamimg {
+      width: 7rem;
+      height: 7rem;
+    }
+    .plusicon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  @media (min-width: 1050px) and (max-width: 1228px) {
+    font-size: 55%;
+    .webtitle {
+      padding: 0.9rem 2rem;
+    }
+  }
+  @media (min-width: 890px) and (max-width: 1049px) {
+    font-size: 45%;
+  }
+  @media (min-width: 768px) and (max-width: 890px) {
+    font-size: 40%;
+  }
+  @media (min-width: 650px) and (max-width: 768px) {
+    font-size: 50%;
+    .teamimg {
+      width: 6rem;
+      height: 6rem;
+    }
+    .plusicon {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+  @media (min-width: 310px) and (max-width: 650px) {
+    font-size: 50%;
+  }
+  @media (min-width: 540px) and (max-width: 600px) {
+    font-size: 45%;
+  }
 }
 
 :root {
@@ -18,4 +72,40 @@ html {
   --color-gray: #9d9d9d;
   --white: white;
   --color-yellow2: #fce6bd;
+}
+html,
+body {
+  overflow: hidden;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable {
+  overflow: scroll;
+}
+@media (max-width: 540px) {
+  html,
+  body {
+    overflow: auto;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: block;
+  }
+
+  .scrollable {
+    overflow: auto;
+  }
 }

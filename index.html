@@ -21,6 +21,48 @@
     ></script>
   </head>
   <body>
+    <main class="userloginfirst">
+      <article class="webtitle">
+        <h1 class="webtitle__one">Ziferblat</h1>
+        <h1 class="webtitle__des">Teamwork & time management</h1>
+      </article>
+      <div class="userloginflex2">
+        <div class="header__loginarea__bellsection">
+          <ion-icon
+            class="header__loginarea--bellicon"
+            name="notifications-outline"
+          ></ion-icon>
+          <span><div class="header__loginarea--notificationdot"></div></span>
+        </div>
+        <img class="loginimg" src="images/users/user5.jpg" alt="user" />
+        <section class="username">
+          <h1 class="user bold">User</h1>
+          <h1 class="user-name">Maria</h1>
+        </section>
+        <div class="arrowicon whitecolor">
+          <ion-icon
+            class="arrowicon-down blackcolor"
+            name="chevron-down-outline"
+          ></ion-icon>
+        </div>
+      </div>
+    </main>
+    <main class="columnfirst">
+      <div class="flex-nav">
+        <main class="icons nav">
+          <ion-icon class="nav-icons" name="home-outline"></ion-icon>
+          <ion-icon class="nav-icons" name="people-outline"></ion-icon>
+          <ion-icon class="nav-icons" name="calendar-outline"></ion-icon>
+          <ion-icon class="nav-icons" name="checkbox-outline"></ion-icon>
+          <ion-icon class="nav-icons whitebg" name="time-outline"></ion-icon>
+          <ion-icon
+            class="nav-icons"
+            name="chatbubble-outline"
+            onclick="toggleColnav()"
+          ></ion-icon>
+        </main>
+      </div>
+    </main>
     <section class="grid-container">
       <main class="column1">
         <div class="flex-1">
@@ -40,6 +82,80 @@
           </main>
         </div>
       </main>
+
+      <main class="colnav hidden">
+        <section class="col2">
+          <div class="dropdown-container">
+            <div
+              class="dropdown-title"
+              onclick="toggleDropdown('dropdown-team', this)"
+            >
+              Team
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-items" id="dropdown-team">
+              <li>Developer</li>
+              <li>Designer</li>
+              <li>Add new team</li>
+            </ul>
+
+            <div
+              class="dropdown-title"
+              onclick="toggleDropdown('dropdown-projects', this)"
+            >
+              Projects
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-items" id="dropdown-projects">
+              <li>All projects (4)</li>
+              <li>Design system</li>
+              <li>User Flow</li>
+              <li>UX research</li>
+              <li>Add new project</li>
+            </ul>
+
+            <div
+              class="dropdown-title"
+              onclick="toggleDropdown('dropdown-tasks', this)"
+            >
+              Tasks
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-items" id="dropdown-tasks">
+              <li>All task (3)</li>
+              <li>New (1)</li>
+              <li>In progress (1)</li>
+              <li>Done (1)</li>
+              <li>Add new task</li>
+            </ul>
+          </div>
+          <div
+            class="dropdown-title"
+            onclick="toggleDropdown('dropdown-reminders', this)"
+          >
+            Reminders
+            <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <ul class="dropdown-items" id="dropdown-reminders">
+            <li>Meeting (2)</li>
+            <li>Add new reminder</li>
+          </ul>
+
+          <div
+            class="dropdown-title"
+            onclick="toggleDropdown('dropdown-messenger', this)"
+          >
+            Messenger
+            <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <ul class="dropdown-items" id="dropdown-messenger">
+            <li>David</li>
+            <li>Alex</li>
+            <li>Add new messenger</li>
+          </ul>
+        </section>
+      </main>
+
       <main class="column2">
         <article class="webtitle">
           <h1 class="webtitle__one">Ziferblat</h1>
@@ -306,7 +422,7 @@
               <section class="dailycardcenter removespace">
                 <section class="topflex">
                   <div class="reddot whitedot"></div>
-                  <h1 class="dailycard-title white">Don</h1>
+                  <h1 class="dailycard-title white">Done</h1>
                   <div class="box blackbg">
                     <ion-icon
                       class="boxicon"
@@ -334,6 +450,17 @@
           dropdown.style.display = "block";
           icon.setAttribute("name", "chevron-down-outline");
         }
+      }
+
+      function toggleColnav() {
+        const colnav = document.querySelector(".colnav");
+        const chatBubbleIcon = document.querySelector(
+          '.nav-icons[name="chatbubble-outline"]'
+        );
+
+        colnav.classList.toggle("hidden");
+
+        chatBubbleIcon.classList.toggle("chatbg");
       }
     </script>
   </body>

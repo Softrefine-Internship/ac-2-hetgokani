@@ -1,10 +1,14 @@
-.flex-1 {
+.flex-1,
+.flex-nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+}
+.flex-nav {
+  flex-direction: row;
 }
 .col2 {
   width: 100%;
@@ -22,6 +26,9 @@
   height: calc(100vh - 0.2rem);
 
   overflow-y: auto;
+  @media (min-width: 540px) and (max-width: 768px) {
+    padding-bottom: 10rem;
+  }
 }
 .reminderflex {
   display: flex;
@@ -98,4 +105,13 @@
 }
 .removespace {
   justify-content: flex-start;
+}
+.userloginfirst {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-yellow);
+  @media (min-width: 768px) and (max-width: 3000px) {
+    display: none;
+  }
 }

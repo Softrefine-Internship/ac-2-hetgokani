@@ -14,6 +14,9 @@
   align-items: center;
   flex-direction: column;
 }
+.nav {
+  flex-direction: row;
+}
 .nav-icons:first-child {
   background-color: var(--color-yellow);
 }

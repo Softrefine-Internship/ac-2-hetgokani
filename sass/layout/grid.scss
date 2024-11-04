@@ -1,20 +1,85 @@
 .grid-container {
   display: grid;
   grid-template-columns: 6% 18% 46% 30%;
-  height: 100vh;
+
+  @media (min-width: 310px) and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 100vh;
+    .col-center {
+      height: auto;
+      overflow: visible;
+    }
+  }
 }
 
 .column1 {
   background-color: var(--white);
   width: 100%;
+  @media (min-width: 310px) and (max-width: 768px) {
+    display: none;
+  }
+}
+.columnfirst {
+  background-color: var(--white);
+  width: 100%;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.247);
+  @media (min-width: 768px) and (max-width: 3000px) {
+    display: none;
+  }
+  @media (min-width: 310px) and (max-width: 768px) {
+    display: block;
+  }
 }
 .column2 {
   background-color: var(--color-yellow);
+  @media (min-width: 310px) and (max-width: 768px) {
+    display: none;
+  }
+}
+.colnav {
+  background-color: var(--color-yellow);
+  z-index: 999999;
+  height: 100vh;
+  @media (min-width: 768px) and (max-width: 3000px) {
+    display: none;
+  }
+  @media (min-width: 310px) and (max-width: 768px) {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 20%;
+  }
+  @media (min-width: 320px) and (max-width: 622px) {
+    width: 30%;
+  }
+  @media (min-width: 500px) and (max-width: 600px) {
+    width: 30%;
+    top: 9%;
+  }
+  @media (min-width: 320px) and (max-width: 438px) {
+    width: 40%;
+  }
 }
 .column3 {
   background-color: var(--white);
 }
 .column4 {
   background-color: var(--white);
-  box-shadow: 0.8rem 0 2rem 1.2rem rgba(153, 153, 153, 0.2);
+  box-shadow: 0 0.8rem 2rem rgba(153, 153, 153, 0.2);
+}
+.hidden {
+  display: none;
+}
+.chatbg {
+  background-color: var(--color-yellow);
+}
+.whitebg {
+  &:hover {
+    background-color: white;
+  }
 }
