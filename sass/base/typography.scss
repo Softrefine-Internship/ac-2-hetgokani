@@ -24,10 +24,11 @@
   &__one {
     font-size: 2.8rem;
     font-family: "Outfit", serif;
+    font-weight: 500;
   }
   &__des {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Outfit", serif;
   }
   @media (min-width: 310px) and (max-width: 768px) {
@@ -48,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .dropdown-items {
@@ -65,8 +66,10 @@
   padding: 0.5rem 1.5rem;
   font-size: 1.5rem;
   font-weight: 400;
+  transition: all 0.3s ease;
   &:hover {
     cursor: pointer;
+    transform: translateX(1rem);
   }
 }
 .dropdown-items li:last-child {
@@ -83,7 +86,7 @@
 }
 .col3-title {
   font-size: 2.8rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Outfit", serif;
 }
 .search-container {
@@ -130,6 +133,7 @@
   &-title {
     font-size: 2.1rem;
     font-family: "Outfit", serif;
+    font-weight: 500;
   }
   &-open {
     font-size: 1.5rem;
@@ -145,6 +149,7 @@
   font-size: 2rem;
   font-family: "Outfit", serif;
   margin: 2.8rem 0 0 0;
+  font-weight: 500;
   &-div {
     margin: 2rem 0 4rem 0;
     border: 1px solid #6d6a6a6e;
@@ -153,11 +158,16 @@
 
     &--title {
       font-size: 1.2rem;
-      font-weight: 400;
+      font-weight: 300;
       color: #363636;
     }
     &--des {
       font-size: 1.8rem;
+      font-weight: 500;
+      @media (max-width: 576px) {
+        align-self: flex-start;
+        margin-top: 0.5rem;
+      }
     }
   }
 }
@@ -269,6 +279,7 @@
 .teamtitle {
   font-size: 2rem;
   margin: 5rem 0 0 0;
+  font-weight: 500;
 }
 .teamimg {
   width: 5.2rem;
@@ -310,6 +321,7 @@
   &-des {
     font-size: 1.8rem;
     color: black;
+    font-weight: 500;
   }
 }
 .marginset {
@@ -317,6 +329,7 @@
 }
 .dailytitle {
   font-size: 2rem;
+  font-weight: 500;
 }
 .editoption {
   font-size: 1.4rem;
@@ -326,4 +339,33 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--color-orange);
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: var(--color-orange);
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
 }

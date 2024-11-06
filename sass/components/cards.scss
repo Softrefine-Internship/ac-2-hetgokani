@@ -84,7 +84,7 @@
 }
 .card-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Outfit", serif;
   margin-top: 3rem;
   &-des {
@@ -124,7 +124,7 @@
 }
 .daily-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 1.5rem;
   margin: 1.2rem 0 0 0;
 }
@@ -147,10 +147,12 @@
 }
 .dailycardcenter {
   padding: 1rem 1.5rem;
-  height: 100%;
+  height: 13rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  @media (min-width: 350px) and (max-width: 540px) {
+    height: 10rem;
+  }
 }
 .addnewtext {
   font-size: 1.5rem;
@@ -168,7 +170,7 @@
 .dailycard-title {
   font-size: 1.2rem;
   font-weight: 500;
-  margin: 0 0 0 0.4rem;
+  margin: 0 0.8rem 0 0.4rem;
 }
 .reddot {
   background-color: var(--color-orange);
@@ -178,8 +180,8 @@
 }
 .box {
   border: 1.5px solid var(--color-orange);
-  height: 1.1rem;
-  width: 1.1rem;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: white;
   border-radius: 25%;
   margin: 0 0 0 0.7rem;
@@ -202,8 +204,8 @@
   color: white;
 }
 .boxicon {
-  height: 1rem;
-  width: 1rem;
+  height: 1.3rem;
+  width: 1.3rem;
   color: white;
 }
 .blackbg {
@@ -213,4 +215,104 @@
 }
 .utilitymarginbottom {
   margin-bottom: 4rem;
+}
+.curly-line {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+.dailycard2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.curly-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transform: rotate(-15deg);
+  margin-top: 4.05rem;
+}
+
+.topflex,
+.dailycard-title,
+.dailycardtext {
+  position: relative;
+}
+
+.two {
+  transform: rotate(-20deg);
+  margin-top: 6rem;
+}
+.dailycard2,
+.dailycard2 {
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  height: 80px;
+  width: 20px;
+  background-color: transparent;
+
+  transform: rotate(-30deg);
+}
+
+.rectangle.middle {
+  width: 20px;
+  top: 10.1rem;
+  left: 3rem;
+  border: 2px solid black;
+  transform: rotate(60deg);
+  border: 1px solid var(--color-orange);
+}
+
+.rectangle:first-child {
+  top: 6rem;
+  left: -2rem;
+  transform: rotate(60deg);
+  border: 1px solid var(--color-orange);
+}
+
+.rectangle.last {
+  top: 7rem;
+  left: 2rem;
+  transform: rotate(60deg);
+  border: 1px solid var(--color-orange);
+}
+.oval {
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  background-color: transparent;
+  border: 2px solid wheat;
+  border-radius: 50%;
+}
+
+.oval.middle {
+  height: 40px;
+  width: 50px;
+  top: 6.5rem;
+  left: 10.7rem;
+  transform: rotate(-60deg);
+  border: 2px solid white;
+}
+
+.oval:first-child {
+  height: 20px;
+  width: 30px;
+  top: 11.5rem;
+  left: 8rem;
+  transform: rotate(-60deg);
+  border: 2px solid white;
+}
+
+.oval.last {
+  height: 20px;
+  width: 30px;
+  top: 10rem;
+  left: 15.5rem;
+  transform: rotate(-60deg);
+  border: 2px solid white;
 }

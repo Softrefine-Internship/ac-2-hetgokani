@@ -50,11 +50,20 @@
     <main class="columnfirst">
       <div class="flex-nav">
         <main class="icons nav">
-          <ion-icon class="nav-icons" name="home-outline"></ion-icon>
-          <ion-icon class="nav-icons" name="people-outline"></ion-icon>
-          <ion-icon class="nav-icons" name="calendar-outline"></ion-icon>
-          <ion-icon class="nav-icons" name="checkbox-outline"></ion-icon>
-          <ion-icon class="nav-icons whitebg" name="time-outline"></ion-icon>
+          <ion-icon class="nav-icons home" name="home"></ion-icon>
+          <ion-icon
+            class="nav-icons boldeffect"
+            name="people-outline"
+          ></ion-icon>
+          <ion-icon
+            class="nav-icons boldeffect"
+            name="calendar-outline"
+          ></ion-icon>
+          <ion-icon
+            class="nav-icons boldeffect"
+            name="checkbox-outline"
+          ></ion-icon>
+          <ion-icon class="nav-icons boldeffect" name="time-outline"></ion-icon>
           <ion-icon
             class="nav-icons"
             name="chatbubble-outline"
@@ -63,6 +72,7 @@
         </main>
       </div>
     </main>
+
     <section class="grid-container">
       <main class="column1">
         <div class="flex-1">
@@ -84,6 +94,13 @@
       </main>
 
       <main class="colnav hidden">
+        <div class="crossflex">
+          <ion-icon
+            class="closeicon"
+            name="close-outline"
+            onclick="hideColnav()"
+          ></ion-icon>
+        </div>
         <section class="col2">
           <div class="dropdown-container">
             <div
@@ -106,7 +123,11 @@
               Projects
               <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
             </div>
-            <ul class="dropdown-items" id="dropdown-projects">
+            <ul
+              class="dropdown-items"
+              id="dropdown-projects"
+              style="display: block"
+            >
               <li>All projects (4)</li>
               <li>Design system</li>
               <li>User Flow</li>
@@ -121,7 +142,11 @@
               Tasks
               <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
             </div>
-            <ul class="dropdown-items" id="dropdown-tasks">
+            <ul
+              class="dropdown-items"
+              id="dropdown-tasks"
+              style="display: block"
+            >
               <li>All task (3)</li>
               <li>New (1)</li>
               <li>In progress (1)</li>
@@ -129,6 +154,7 @@
               <li>Add new task</li>
             </ul>
           </div>
+
           <div
             class="dropdown-title"
             onclick="toggleDropdown('dropdown-reminders', this)"
@@ -183,7 +209,7 @@
               Projects
               <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
             </div>
-            <ul class="dropdown-items" id="title-2">
+            <ul class="dropdown-items" id="title-2" style="display: block">
               <li>All projects (4)</li>
               <li>Design system</li>
               <li>User Flow</li>
@@ -198,7 +224,7 @@
               Tasks
               <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
             </div>
-            <ul class="dropdown-items" id="title-3">
+            <ul class="dropdown-items" id="title-3" style="display: block">
               <li>All task (3)</li>
               <li>New (1)</li>
               <li>In progress (1)</li>
@@ -206,13 +232,13 @@
               <li>Add new task</li>
             </ul>
           </div>
+
           <div class="dropdown-title" onclick="toggleDropdown('title-4', this)">
             Reminders
             <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
           </div>
           <ul class="dropdown-items" id="title-4">
             <li>Meeting (2)</li>
-
             <li>Add new reminder</li>
           </ul>
 
@@ -227,6 +253,7 @@
           </ul>
         </section>
       </main>
+
       <main class="column3">
         <div class="col-center">
           <h3 class="col3-title">Today, 4 October</h3>
@@ -303,7 +330,7 @@
               </main>
             </div>
           </section>
-          <h1 class="reminder">Reminder</h1>
+          <h1 class="reminder">Reminders</h1>
           <div class="reminder-div">
             <h1 class="reminder-div--title">Tomorrow, 16:00-18:00</h1>
             <div class="reminderflex">
@@ -329,7 +356,7 @@
           </section>
           <section class="userloginflex">
             <button class="addbutton">Add project</button>
-            <div class="userloginflex2">
+            <div class="userloginflex2 hideview">
               <div class="header__loginarea__bellsection">
                 <ion-icon
                   class="header__loginarea--bellicon"
@@ -393,10 +420,46 @@
 
             <div class="dailycard2">
               <section class="dailycardcenter">
+                <div class="curly-line">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 400 50"
+                    width="100%"
+                    height="50"
+                    class="curly-line"
+                  >
+                    <path
+                      d="M0 25 Q 50 -25, 100 25 Q 150 75, 200 25 Q 250 -25, 300 25 Q 350 75, 400 25"
+                      fill="transparent"
+                      stroke="#f0894d"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="curly-line two">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 400 50"
+                    width="100%"
+                    height="50"
+                    class="curly-line"
+                  >
+                    <path
+                      d="M0 25 Q 50 -25, 100 25 Q 150 75, 200 25 Q 250 -25, 300 25 Q 350 75, 400 25"
+                      fill="transparent"
+                      stroke="#f0894d"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+
                 <section class="topflex">
                   <div class="reddot"></div>
                   <h1 class="dailycard-title">New</h1>
-                  <div class="box"></div>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
                 </section>
                 <h1 class="dailycardtext">
                   Change color palette to more bright
@@ -406,11 +469,17 @@
           </section>
           <section class="daily-grid">
             <div class="dailycard2">
+              <div class="rectangle"></div>
+              <div class="rectangle middle"></div>
+              <div class="rectangle last"></div>
               <section class="dailycardcenter removespace">
                 <section class="topflex">
                   <div class="reddot cyandot"></div>
                   <h1 class="dailycard-title">In progress</h1>
-                  <div class="box"></div>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
                 </section>
                 <h1 class="dailycardtext cardmarginset">
                   Make prototype for mobile version
@@ -420,6 +489,10 @@
 
             <div class="dailycard2 orangebg">
               <section class="dailycardcenter removespace">
+                <div class="oval"></div>
+                <div class="oval middle"></div>
+                <div class="oval last"></div>
+
                 <section class="topflex">
                   <div class="reddot whitedot"></div>
                   <h1 class="dailycard-title white">Done</h1>
@@ -438,6 +511,7 @@
         </div>
       </main>
     </section>
+
     <script>
       function toggleDropdown(titleId, titleElement) {
         const dropdown = document.getElementById(titleId);
@@ -459,8 +533,17 @@
         );
 
         colnav.classList.toggle("hidden");
-
         chatBubbleIcon.classList.toggle("chatbg");
+      }
+
+      function hideColnav() {
+        const colnav = document.querySelector(".colnav");
+        const chatBubbleIcon = document.querySelector(
+          '.nav-icons[name="chatbubble-outline"]'
+        );
+
+        colnav.classList.add("hidden");
+        chatBubbleIcon.classList.remove("chatbg");
       }
     </script>
   </body>

@@ -30,11 +30,16 @@
     padding-bottom: 10rem;
   }
 }
+
 .reminderflex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 .orangedotsflex {
   display: flex;
@@ -72,6 +77,11 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+  .hideview {
+  }
+  @media (max-width: 768px) {
+    justify-content: end;
+  }
 }
 .userloginflex2 {
   display: flex;
