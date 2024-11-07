@@ -48,6 +48,8 @@
   position: fixed;
   top: 0rem;
 
+  animation: slideIn 0.3s ease-out forwards;
+
   @media (min-width: 768px) and (max-width: 3000px) {
     display: none;
   }
@@ -73,6 +75,15 @@
     width: 70%;
   }
 }
+@keyframes slideIn {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 0;
+  }
+}
+
 .column3 {
   background-color: var(--white);
 }
