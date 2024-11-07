@@ -332,7 +332,7 @@
           </section>
           <h1 class="reminder">Reminders</h1>
           <div class="reminder-div">
-            <h1 class="reminder-div--title">Tomorrow, 16:0-18:00</h1>
+            <h1 class="reminder-div--title">Tomorrow, 16:00-18:00</h1>
             <div class="reminderflex">
               <h1 class="reminder-div--des">
                 Discussion of the interm results of the project
@@ -534,6 +534,12 @@
 
         colnav.classList.toggle("hidden");
         chatBubbleIcon.classList.toggle("chatbg");
+
+        if (!colnav.classList.contains("hidden")) {
+          document.addEventListener("click", outsideClickListener);
+        } else {
+          document.removeEventListener("click", outsideClickListener);
+        }
       }
 
       function hideColnav() {
@@ -544,6 +550,23 @@
 
         colnav.classList.add("hidden");
         chatBubbleIcon.classList.remove("chatbg");
+
+        document.removeEventListener("click", outsideClickListener);
+      }
+
+      function outsideClickListener(event) {
+        const colnav = document.querySelector(".colnav");
+        const chatBubbleIcon = document.querySelector(
+          '.nav-icons[name="chatbubble-outline"]'
+        );
+
+        if (
+          !colnav.contains(event.target) &&
+          !chatBubbleIcon.contains(event.target) &&
+          !colnav.classList.contains("hidden")
+        ) {
+          hideColnav();
+        }
       }
     </script>
   </body>

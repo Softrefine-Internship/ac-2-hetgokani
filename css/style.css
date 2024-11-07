@@ -1145,8 +1145,9 @@ body {
   background-color: var(--color-yellow);
   z-index: 999999;
   height: 100vh;
-  top: 10%;
-  left: 0%;
+  position: fixed;
+  top: 6rem;
+  height: calc(100vh - 20px);
 }
 @media (min-width: 768px) and (max-width: 3000px) {
   .colnav {
@@ -1155,7 +1156,6 @@ body {
 }
 @media (min-width: 310px) and (max-width: 768px) {
   .colnav {
-    position: absolute;
     width: 30%;
   }
 }
@@ -1167,7 +1167,6 @@ body {
 @media (min-width: 538px) and (max-width: 600px) {
   .colnav {
     width: 30%;
-    top: 9%;
   }
 }
 @media (min-width: 320px) and (max-width: 438px) {
@@ -1255,6 +1254,10 @@ body {
   height: 3rem;
   color: black;
   margin: 1rem 1.5rem 0 0;
+}
+
+.chatbg {
+  background-color: var(--color-yellow);
 }
 
 /*# sourceMappingURL=style.css.map */
