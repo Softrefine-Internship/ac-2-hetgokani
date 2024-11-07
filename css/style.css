@@ -1143,11 +1143,10 @@ body {
 
 .colnav {
   background-color: var(--color-yellow);
-  z-index: 999999;
+  z-index: 999999999;
   height: 100vh;
   position: fixed;
-  top: 6rem;
-  height: calc(100vh - 20px);
+  top: 0rem;
 }
 @media (min-width: 768px) and (max-width: 3000px) {
   .colnav {
@@ -1156,17 +1155,17 @@ body {
 }
 @media (min-width: 310px) and (max-width: 768px) {
   .colnav {
-    width: 30%;
+    width: 40%;
   }
 }
 @media (min-width: 320px) and (max-width: 622px) {
   .colnav {
-    width: 30%;
+    width: 40%;
   }
 }
 @media (min-width: 538px) and (max-width: 600px) {
   .colnav {
-    width: 30%;
+    width: 40%;
   }
 }
 @media (min-width: 320px) and (max-width: 438px) {
@@ -1174,9 +1173,19 @@ body {
     width: 50%;
   }
 }
-@media (min-width: 440px) and (max-width: 530px) {
+@media (min-width: 300px) and (max-width: 530px) {
   .colnav {
-    width: 40%;
+    width: 50%;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .colnav {
+    width: 60%;
+  }
+}
+@media (min-width: 300px) and (max-width: 340px) {
+  .colnav {
+    width: 70%;
   }
 }
 
@@ -1244,9 +1253,10 @@ body {
 
 .crossflex {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  border-bottom: 1px solid #ccc;
 }
 
 .closeicon {
